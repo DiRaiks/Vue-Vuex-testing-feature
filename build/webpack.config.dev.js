@@ -13,7 +13,7 @@ module.exports = {
       }
     ]
   },
-  plagins: [
+  plugins: [
     new VueLoaderPlugin()
   ]
 }
