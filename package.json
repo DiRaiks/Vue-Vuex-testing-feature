@@ -1,0 +1,19 @@
+{
+  "name": "vue-testing-feature-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DiRaiks/vue-testing-feature-app.git"
+  },
+  "author": "DiRaiks",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DiRaiks/vue-testing-feature-app/issues"
+  },
+  "homepage": "https://github.com/DiRaiks/vue-testing-feature-app#readme"
+}
