@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/DiRaiks/vue-testing-feature-app/issues"
   },
-  "homepage": "https://github.com/DiRaiks/vue-testing-feature-app#readme"
+  "homepage": "https://github.com/DiRaiks/vue-testing-feature-app#readme",
+  "dependencies": {
+    "vue": "^2.5.16"
+  }
 }
