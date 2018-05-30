@@ -2,6 +2,7 @@ const path = require('path');
 
 const {VueLoaderPlugin} = require('vue-loader');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const config = {
   mode: 'development',
@@ -32,6 +33,12 @@ const config = {
           loader: 'babel-loader',
           options: { presets: ['es2015']}
         }]
+      },
+      {
+        test: /\scss$/,
+        use: [
+          'style-loader', MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'
+        ]
       }
     ]
   },
@@ -46,7 +53,10 @@ const config = {
     hot: true
     },
   plugins: [
-    new VueLoaderPlugin()
+    new VueLoaderPlugin(),
+    new MiniCssExtractPlugin({
+      filename: 'style.[contenthash].css'
+    })
   ]
 }
 
