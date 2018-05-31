@@ -63,7 +63,7 @@ const config = {
 // HTML Template
 // ------------------------------------
 config.plugins.push(new HtmlWebpackPlugin({
-    template: './index.html',
+    template: './src/index.html',
     inject: true,
     minify: {
         collapseWhitespace: true,
