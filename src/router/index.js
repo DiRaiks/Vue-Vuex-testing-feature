@@ -7,7 +7,7 @@ Vue.use(VueRouter);
 
 export default new VueRouter({
   routes: [
-    {path: '/', name: 'Registration', component: Registration},
-    // {path: '/registration', name: 'registration', component: Registration}
+    {path: '/', name: 'Registration', component: Home},
+    {path: '/registration', name: 'registration', component: Registration}
   ]
 })
