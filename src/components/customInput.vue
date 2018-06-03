@@ -2,6 +2,7 @@
     <label>
         {{label}}
         <input
+        :placeholder="placeholder"
         :type='type'
         :value='value'
         @input="$emit('input', $event.target.value)" />
@@ -10,7 +11,7 @@
 
 <script>
 export default {
-    props: ['type', 'value'],
+    props: ['type', 'value', 'placeholder'],
     data() {
         return {
             label: 'TEST'

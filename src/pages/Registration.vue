@@ -1,9 +1,11 @@
 <template>
   <div>
-    <h1> Hello World! </h1>
-    <custom-input type='text' v-model='valueName'></custom-input>
-    <custom-input type='text' v-model='valueFamily'></custom-input>
-
+    <h1> Registration </h1>
+        <custom-input v-for='field in fields'
+        :placeholder='field.placeholder'
+        :key='field.key'
+        :type='field.type'
+        v-model='field.value'></custom-input>
   </div>
 </template>
 
@@ -13,8 +15,11 @@ import {mapState} from 'vuex';
 export default({
     data() {
         return {
-            valueName: '',
-            valueFamily:''
+            fields: {
+                name: {key: 'Name', placeholder: 'Enter Name..', type: 'text', value: ''},
+                email: {key: 'Email', placeholder: 'Enter Email..', type: 'email', value: ''},
+                password: {key: 'Password', placeholder: 'Enter Password..', type: 'password', value: ''}
+            }
         }
     },
     computed: mapState([
